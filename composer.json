@@ -1,0 +1,9 @@
+{
+    "name": "oooom/waaxxmhub",
+    "autoload": {
+        "psr-4": {
+            "Oooom\\Waaxxmhub\\": "src/"
+        }
+    },
+    "require": {}
+}
