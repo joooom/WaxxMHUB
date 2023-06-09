@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Waxx Hub | MoneyCraft</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Estilo para o popup */
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        
+      }
+
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+      }
+
+      .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        color: #aaa;
+        cursor: pointer;
+      }
+
+      .popup-close:hover {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <a href="/"><img src="../img/waxx.svg" onmouseover="this.src='../img/waxxl.svg'" onmouseout="this.src='../img/waxx.svg'" width="50%" alt="logo"></a>
+          <ul>
+            <li><a href="#modpacks">Modpacks</a></li>
+            <li><a href="#mods">Mods</a></li>
+        </nav>
+      </header>
+    <main>
+      <div class="addon-header">
+        <div class="addon-header-image">
+          <img src="../img/MoneyCraft.png" height="50px" width="50px" alt="MoneyCraft thumbnail">
+        </div>
+        <div class="addon-header-info">
+          <h1 class="addon-name">MoneyCraft</h1>
+          <p class="addon-author">by Alex RAAG</p>
+          <div class="addon">
+            <h3>Download</h3><p style="scale: 85%;">V. 0.1.0</p><br>
+            <div class="addon-actions">
+              <br><button class="download-button" onclick="openPopup1()">MultiMC</button><br><button class="download-button" onclick="openPopup2()">GDLauncher / CurseForge</button>
+              <br><button class="download-button-unavaible" style="cursor: not-allowed;">Minecraft Launcher</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="addon-description">
+        <h2>Description</h2>
+        <p>Money Craft é um modpack para ser jogado em multiplayer com seus amigos, realizando trocas, comprando coisa ou até construindo uma cidade como no <a href="https://www.google.com/search?q=stonkscraft+2" style="color: white;">StonksCraft</a></p>
+      <br></div>
+      <div class="addon-changelog">
+        <h2>Changelog</h2>
+        <ul>
+          <li>Version 0.1.0 - Initial beta</li>
+        </ul>
+        <br></div>
+      <div class="addon-images">
+        <h2>Screenshots</h2>
+        <div class="addon-image-container">
+          <h4 style="background-color: white; color: black; text-align: center;"><br>404<br style="background-color: white"></h4>
+</div>
+      </div>
+      <!-- Popup content -->
+      <div class="popup-overlay" onclick="closePopup1()" id="popup1">
+        <div class="popup" style="color: black;">
+          <span class="popup-close" onclick="closePopup1()">&times;</span>
+          <h2>Download MoneyCraft</h2>
+          <p>Escolha a versão do MultiMC para baixar:</p><br>
+          <ul>
+            <a href="../src/download/0.1.0-MoneyCraft.mmc.zip">Versão 0.1.0</a><br>
+          </ul>
+        </div>
+      </div>
+      <div class="popup-overlay" onclick="closePopup2()" id="popup2">
+        <div class="popup" style="color: black;">
+          <span class="popup-close" onclick="closePopup2()">&times;</span>
+          <h2>Download MoneyCraft</h2>
+          <p>Escolha a versão do GDLauncher / CurseForge para baixar:</p><br>
+          <ul>
+            <a href="../src/download/0.1.0-MoneyCraft.overwolf.zip">Versão 0.1.0</a><br>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script>
+      function openPopup1() {
+        document.getElementById("popup1").style.display = "block";
+      }
+      function closePopup1() {
+    document.getElementById("popup1").style.display = "none";
+      }
+    function openPopup2() {
+        document.getElementById("popup2").style.display = "block";
+      }
+      function closePopup2() {
+    document.getElementById("popup2").style.display = "none";
+  }
+</script>
+</body>
+</html>

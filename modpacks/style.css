@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #333;
+color: white;
+}
+
+header {
+background-color: #121212;
+color: #fff;
+padding: 10px 0;
+}
+
+nav {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav img {
+width: 150px;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+font-weight: 500;
+}
+
+nav li {
+margin-right: 20px;
+}
+
+nav li:last-child {
+margin-right: 0;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+color: #ccc;
+}
+
+.search-container {
+display: flex;
+align-items: center;
+}
+
+.search-container input[type="text"] {
+padding: 6px;
+border-radius: 6px;
+border: none;
+font-size: 16px;
+}
+
+.search-container button {
+background-color: #555;
+color: #fff;
+border: none;
+border-radius: 6px;
+padding: 6px 12px;
+margin-left: 10px;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+.search-container button:hover {
+background-color: #444;
+}
+
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.addon-header {
+display: flex;
+align-items: center;
+}
+
+.addon-header-image img {
+width: 300px;
+height: 300px;
+object-fit: cover;
+border-radius: 6px;
+}
+
+.addon-header-info {
+margin-left: 40px;
+}
+
+.addon-name {
+font-size: 36px;
+font-weight: 700;
+}
+
+.addon-author {
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+.addon-actions {
+display: flex;
+}
+
+.addon-actions button {
+color: #fff;
+border: none;
+border-radius: 6px;
+padding: 10px 20px;
+margin-right: 10px;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+.download-button:hover {
+background-color: #444;
+}
+.download-button-unavaible {
+background-color: #3f3f3f;
+}
+.download-button{
+background-color: #555;
+}
+
+.favorite-button {
+background-color: #ffcc00;
+}
+
+.share-button {
+background-color: #0077cc;
+}
+
+.addon-stats
+
+{
+display: flex;
+align-items: center;
+margin-top: 20px;
+}
+
+.addon-stats-item {
+display: flex;
+align-items: center;
+margin-right: 40px;
+}
+
+.addon-stats-item:last-child {
+margin-right: 0;
+}
+
+.addon-stats-item span {
+margin-left: 10px;
+font-weight: 500;
+}
+
+.addon-stats-item svg {
+width: 24px;
+height: 24px;
+}
+
+.addon-stats-item svg path {
+fill: #ccc;
+}
+
+.addon-description {
+margin-top: 40px;
+font-size: 18px;
+line-height: 1.5;
+}
+
+.addon-screenshots {
+margin-top: 40px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.addon-screenshot img {
+width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 6px;
+}
+
+.addon-reviews {
+margin-top: 40px;
+}
+
+.addon-review {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.addon-review-image img {
+width: 64px;
+height: 64px;
+object-fit: cover;
+border-radius: 50%;
+margin-right: 20px;
+}
+
+.addon-review-content {
+flex: 1;
+}
+
+.addon-review-username {
+font-size: 18px;
+font-weight: 700;
+}
+
+.addon-review-text {
+margin-top: 10px;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.addon-review-rating {
+display: flex;
+align-items: center;
+margin-top: 10px;
+}
+
+.addon-review-rating svg {
+width: 24px;
+height: 24px;
+}
+
+.addon-review-rating svg path {
+fill: #ffcc00;
+}
+
+.addon-review-date {
+font-size: 14px;
+color: #888;
+}
