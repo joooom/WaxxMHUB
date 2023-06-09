@@ -21,7 +21,7 @@
         </nav>
       </header>
     <main>
-      <div class="container" id="modpacks">
+      <div class="container"  id="modpacks">
         <h1>Modpacks</h1>
         <div class="row">
           <?php foreach ($modpacks as $key => $value) { ?>
