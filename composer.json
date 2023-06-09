@@ -1,11 +1,16 @@
 {
-    "name": "oooom/waaxxmhub",
+    "name": "alexa/waxx-mhub",
+    "description": "ooppp",
     "autoload": {
         "psr-4": {
-            "Oooom\\Waaxxmhub\\": "src/"
+            "Alexa\\WaxxMhub\\": "src/"
         }
     },
-    "require": {
-        "mercadopago/dx-php": "2.5.3"
-    }
+    "authors": [
+        {
+            "name": "goooom",
+            "email": "64928263+joooom@users.noreply.github.com"
+        }
+    ],
+    "require": {}
 }
