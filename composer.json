@@ -5,5 +5,7 @@
             "Oooom\\Waaxxmhub\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "mercadopago/dx-php": "2.5.3"
+    }
 }
